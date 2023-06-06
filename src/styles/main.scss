@@ -1,7 +1,7 @@
 @use 'header';
 @use 'hero';
 @use 'background';
-
+@use 'firstMovie';
 
 
 *{
@@ -11,6 +11,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: #000;
+}
+
 .button{
     text-decoration: none;
     padding: 16px;
@@ -18,4 +22,36 @@
     color: #fc0303;
     font-weight: bold;
     font-size: 20px;
+}
+
+.title{
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text{
+    color: #fff;
+    line-height: 30px;
+    text-align:start;
+}
+
+.image-text-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vw;
+
+    &__logo{
+        max-width: 600px;
+        max-height: 450px;
+        
+        &--height{
+            margin-left: 250px;
+        }
+
+        &--three{
+            margin-left: 150px;
+        }
+        
+    }
 }
