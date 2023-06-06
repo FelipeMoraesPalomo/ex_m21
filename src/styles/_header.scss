@@ -1,10 +1,10 @@
 .header{
-    background-color: #00cbf8c0;
 
     &__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-height: 10vh;
     }
 
     &__logo{
@@ -13,7 +13,7 @@
         padding:  16px 24px;
     }
 
-    &__links{
+    &__list{
         display: flex;
         padding: 16px 24px;
         list-style: none;
@@ -25,7 +25,7 @@
             font-weight: bold;
 
             
-            a{
+            &__link{
                 text-decoration: none;
                 color: #fff;
             }

@@ -11,24 +11,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background">
+        <video class="background__video" loop autoplay muted>
+            <source src="dist/images/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <header class="header">
         <div class="header__container">
             <img class="header__logo" src="dist/images/disneyplus.svg" alt="Disney+">
-            <ul class="header__links">
-                <li class="header__links__item">
-                    <a href="#">Home</a>
+            <ul class="header__list">
+                <li class="header__list__item">
+                    <a class="header__list__item__link" href="#">Home</a>
                 </li>
-                <li class="header__links__item">
-                    <a href="#">Filmes</a>
+                <li class="header__list__item">
+                    <a class="header__list__item__link" href="#">Filmes</a>
                 </li>
-                <li class="header__links__item">
-                    <a href="#">Onde assistir</a>
+                <li class="header__list__item">
+                    <a class="header__list__item__link" href="#">Onde assistir</a>
                 </li>
-                <li class="header__links__item">
-                    <a href="#">Curiosidades</a>
+                <li class="header__list__item">
+                    <a class="header__list__item__link" href="#">Curiosidades</a>
                 </li>
             </ul>
         </div>
     </header>
+    <section class="hero">
+        <div class="hero__content">
+            <h1>
+                <img class="hero__content__logo" src="dist/images/capitao_logo.png" alt="">
+            </h1>
+            <ul class="hero__content__buttons">
+                <li>
+                    <a class="button" href="">Primeiro filme</a>
+                </li>
+                <li>
+                    <a class="button" href="">Segundo filme</a>
+                </li>
+                <li>
+                    <a class="button" href="">Terceiro filme</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>

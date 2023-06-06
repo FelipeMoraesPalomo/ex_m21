@@ -1,5 +1,6 @@
 @use 'header';
-
+@use 'hero';
+@use 'background';
 
 
 
@@ -10,8 +11,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-body{
-    background-image: url(../../dist/images/fundo.jpg);
+.button{
+    text-decoration: none;
+    padding: 16px;
+    background-color: #0011fde8;
+    color: #fff;
 }

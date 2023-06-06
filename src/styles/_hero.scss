@@ -1,0 +1,28 @@
+.hero{
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__content{
+        max-width: 640px;
+        position: absolute;
+        margin-left: 80px;
+        margin-bottom: 100px;
+
+        &__logo{
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        &__buttons{
+            display: flex;
+            list-style: none;
+
+            .button{
+                margin-left: 8px;
+                border-radius: 16px;
+            }
+        }
+    }
+}
