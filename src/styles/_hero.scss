@@ -1,18 +1,21 @@
 .hero{
     height: 90vh;
-    position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 
     &__content{
         max-width: 640px;
-        position: absolute;
         margin-left: 80px;
         margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &__logo{
-            max-width: 350px;
-            margin-bottom: 20px;
+            max-width: 500px;
+            margin-bottom: 30px;
+            margin-left: 10px;
         }
 
         &__buttons{
@@ -20,9 +23,22 @@
             list-style: none;
 
             .button{
-                margin-left: 8px;
+                margin-left: 16px;
                 border-radius: 16px;
             }
         }
     }
+
+    &__contentTwo{
+        width: 640px;
+        display: flex;
+        justify-content: center;
+
+        &__image{
+            max-width: 350px;
+            margin-left: 150px;
+            margin-bottom: 100px;
+        }
+    }
+
 }
