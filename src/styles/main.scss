@@ -1,7 +1,6 @@
 @use 'header';
 @use 'hero';
 @use 'background';
-@use 'firstMovie';
 
 
 *{
@@ -18,10 +17,15 @@ body{
 .button{
     text-decoration: none;
     padding: 16px;
-    background-color: #00b5fde8;
-    color: #fc0303;
+    background-color: #202eaa;
+    color: rgba(252, 0, 0, 0.918);
     font-weight: bold;
     font-size: 20px;
+
+    &:hover{
+        background-color: rgba(252, 0, 0, 0.918);
+        color: #202eaa;
+    }
 }
 
 .title{
@@ -40,18 +44,24 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5vw;
+    align-items: center;
+    text-align: center;
+    
 
     &__logo{
         max-width: 600px;
         max-height: 450px;
         
-        &--height{
-            margin-left: 250px;
-        }
-
-        &--three{
-            margin-left: 150px;
-        }
-        
     }
+
+    
+}
+
+#text1,
+#text3{
+    background-color: #202eaa;
+}
+
+#text2{
+    background-color: rgba(170, 29, 29, 0.918);
 }
