@@ -1,6 +1,7 @@
 @use 'header';
 @use 'hero';
 @use 'background';
+@use 'curiosities';
 
 
 *{
@@ -31,6 +32,13 @@ body{
 .title{
     color: #fff;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.title-big{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
