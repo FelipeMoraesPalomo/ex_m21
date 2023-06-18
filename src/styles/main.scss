@@ -30,6 +30,10 @@ body{
         display: block;
     }
 
+    @media (max-width: 1024px) and (min-width: 641px){
+        font-size: 25px;
+    }
+
     &:hover{
         background-color: rgba(252, 0, 0, 0.918);
         color: #202eaa;
@@ -53,15 +57,32 @@ body{
     color: #fff;
     line-height: 30px;
     text-align:start;
+
+    @media (max-width: 640px){
+        line-height: 25px;
+    }
+
+    @media (max-width: 1024px) and (min-width: 641px){
+        line-height: 25px;
+        font-size: 20px;
+    }
 }
 
 .image-text-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     padding: 5vw;
     align-items: center;
     text-align: center;
+
+
+    &__container{
+        max-width: 50%;
+    }
     
+    &--reverse{
+        flex-direction: row-reverse;
+    }
 
     &__logo{
         max-width: 600px;
@@ -70,7 +91,16 @@ body{
     }
 
     @media (max-width: 640px){
-        grid-template-columns: 1fr;
+        display: block;
+        
+        &__logo{
+            max-width: 400px;
+            max-height: 300px;
+        }
+
+        &__container{
+            max-width: 100%;
+        }
     }
     
 }

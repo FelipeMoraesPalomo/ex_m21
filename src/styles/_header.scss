@@ -56,6 +56,18 @@
             }
         }
 
+    }
 
+    @media (max-width: 1024px) and (min-width: 641px){
+
+        &__list{
+
+            &__item{
+
+                &__link{
+                    font-size: 30px;
+                }
+            }
+        }
     }
 }
