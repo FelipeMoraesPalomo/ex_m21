@@ -40,4 +40,22 @@
             }
         }
     }
+
+    @media (max-width: 640px){
+
+        &__logo{
+            max-width: 100px;
+            margin-left: 0;
+        }
+
+        &__list{
+            padding: 0;
+
+            &__item{
+                padding-right: 16px;
+            }
+        }
+
+
+    }
 }
