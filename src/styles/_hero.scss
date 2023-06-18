@@ -1,17 +1,17 @@
 .hero{
     position: relative;
     height: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     align-items: center;
 
     &__content{
         max-width: 640px;
-        margin-left: 80px;
         margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
 
         &__logo{
             max-width: 500px;
@@ -30,16 +30,35 @@
         }
     }
 
-    &__contentTwo{
-        width: 640px;
-        display: flex;
-        justify-content: center;
 
-        &__image{
-            max-width: 350px;
-            margin-left: 150px;
-            margin-bottom: 100px;
+
+    @media (max-width: 640px){
+
+
+        &__content{
+            display: block;
+            max-width: 800px;
+
+            
+            &__logo{
+                max-width: 200px;
+                margin-left: 0;
+            }
+
+            &__buttons{
+
+                .button{
+                    margin-left: 8px;
+                }
+            }
+        }
+
+
+        &__contentTwo{
+
+            &__image{
+                max-width: 100px;
+            }
         }
     }
-
 }

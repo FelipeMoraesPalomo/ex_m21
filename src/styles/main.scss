@@ -23,6 +23,13 @@ body{
     font-weight: bold;
     font-size: 20px;
 
+    @media (max-width: 640px){
+        text-align: center;
+        font-size: 15px;
+        padding: 8px;
+        display: block;
+    }
+
     &:hover{
         background-color: rgba(252, 0, 0, 0.918);
         color: #202eaa;
